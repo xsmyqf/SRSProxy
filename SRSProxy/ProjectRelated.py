@@ -20,8 +20,8 @@ def GetSourceStreamInfoList():
     sourceStreamInfoList.clear()
     for oneStream in resultJson:
         sourceStreamInfoList[oneStream["url"]] = {}
-        sourceStreamInfoList[oneStream["url"]]["bFixedUrl"] = bool(int(oneStream["fixedUrl"]))
-        sourceStreamInfoList[oneStream["url"]]["url"] = oneStream["cameraIndexCode"]
+        sourceStreamInfoList[oneStream["url"]]["bFixedUrl"] = bool(int(oneStream["FIXEDURL"]))
+        sourceStreamInfoList[oneStream["url"]]["url"] = oneStream["CAMERAINDEXCODE"]
     Debug.Log(f"GetSourceStreamInfoList:{sourceStreamInfoList}")
     return sourceStreamInfoList
 

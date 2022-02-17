@@ -36,8 +36,7 @@ StreamStatusCondition = {
     StreamStatusEnum.Killed: [StreamStatusEnum.WaitForKilled],
     StreamStatusEnum.Broken: [StreamStatusEnum.Running, StreamStatusEnum.Killed],
     StreamStatusEnum.Inactive: [StreamStatusEnum.Running, StreamStatusEnum.Killed],
-    StreamStatusEnum.StartFromSRS: [StreamStatusEnum.NotInConditionList, StreamStatusEnum.CreatedFailed,
-                                    StreamStatusEnum.Killed],
+    StreamStatusEnum.StartFromSRS: [StreamStatusEnum.NotInConditionList, StreamStatusEnum.Killed],
     StreamStatusEnum.TimeOut: [StreamStatusEnum.Running],
     StreamStatusEnum.CreatedFailed: [StreamStatusEnum.WaitForCreate]
 }
